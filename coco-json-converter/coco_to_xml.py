@@ -2,9 +2,9 @@ import argparse
 
 parser = argparse.ArgumentParser(description='Coco Json to Pascal VOC XML Converter.')
 
-parser.add_argument('--coco_json', required=False, default='../RadioGalaxyNET_V4/annotations/instances_test2017.json', help='Target json file to convert to csv.')
-parser.add_argument('--coco_folder', required=False, default='../RadioGalaxyNET_V4/test2017', help='Target folder to find images.')
-parser.add_argument('--save_xml', required=False, default='../RadioGalaxyNET_V4_XML/test2017xml', help='The folder to save annotations xmls.')
+parser.add_argument('--coco_json', required=False, default='../RadioGalaxyNET/annotations/instances_test.json', help='Target json file to convert to csv.')
+parser.add_argument('--coco_folder', required=False, default='../RadioGalaxyNET/test', help='Target folder to find images.')
+parser.add_argument('--save_xml', required=False, default='../RadioGalaxyNET_XML/testxml', help='The folder to save annotations xmls.')
 parser.add_argument('--database_name', required=False, default='RadioGalaxyNET', help='The name of database.')
 parser.add_argument('--no_skip_background', dest='skip_background', action='store_false', help='Do not skip \'background\' category.')
 parser.set_defaults(skip_background=True)
