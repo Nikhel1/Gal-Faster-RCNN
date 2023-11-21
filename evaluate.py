@@ -18,9 +18,9 @@ from detectron2.data import MetadataCatalog
 from detectron2.data.catalog import DatasetCatalog
 
 from detectron2.data.datasets import register_coco_instances
-register_coco_instances("my_dataset_train", {}, "./RadioGalaxyNET_V4/annotations/instances_train2017.json", "./RadioGalaxyNET_V4/train2017")
-register_coco_instances("my_dataset_val", {}, "./RadioGalaxyNET_V4/annotations/instances_val2017.json", "./RadioGalaxyNET_V4/val2017")
-register_coco_instances("my_dataset_test", {}, "./RadioGalaxyNET_V4/annotations/instances_test2017.json", "./RadioGalaxyNET_V4/test2017")
+register_coco_instances("my_dataset_train", {}, "./RadioGalaxyNET/annotations/instances_train.json", "./RadioGalaxyNET/train")
+register_coco_instances("my_dataset_val", {}, "./RadioGalaxyNET/annotations/instances_val.json", "./RadioGalaxyNET/val")
+register_coco_instances("my_dataset_test", {}, "./RadioGalaxyNET/annotations/instances_test.json", "./RadioGalaxyNET/test")
 
 """# Train Custom Detectron2 Detector"""
 
@@ -98,7 +98,7 @@ changed
 coco_eval.params.areaRng = [[0 ** 2, 1e5 ** 2], [0 ** 2, 24 ** 2], [24 ** 2, 48 ** 2], [48 ** 2, 1e5 ** 2]]
 coco_eval.params.areaRngLbl = ['all', 'small', 'medium', 'large']
 
-in file: /datasets/work/mlaifsp-sa-askap/work/softwares/bracewell/anaconda_bowen/anaconda3/envs/frcnn/lib/python3.9/site-packages/detectron2/evaluation/coco_evaluation.py
+in file: /anaconda3/envs/frcnn/lib/python3.9/site-packages/detectron2/evaluation/coco_evaluation.py
 """
 
 # Commented out IPython magic to ensure Python compatibility.
