@@ -15,7 +15,6 @@ We expect the directory structure to be the following:
   val/      # val images
   test/     # test images
 ```
-Convert the dataset to XML format using the coco_to_xml.py script in coco-json-converter folder.
 
 ## Training
 
