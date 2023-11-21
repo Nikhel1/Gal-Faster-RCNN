@@ -20,13 +20,13 @@ We expect the directory structure to be the following:
 
 To train on a single node with single gpu run:
 ```
-python -m torch.distributed.launch --nproc_per_node=1 train.py
+python train.py
 ```
 
 ## Evaluation
 To evaluate on test images with a single GPU run:
 ```
-python -m torch.distributed.launch --nproc_per_node=1 evaluate.py
+python evaluate.py
 ```
 
 ## License
