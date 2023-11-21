@@ -18,9 +18,9 @@ from detectron2.data import MetadataCatalog
 from detectron2.data.catalog import DatasetCatalog
 
 from detectron2.data.datasets import register_coco_instances
-register_coco_instances("my_dataset_train", {}, "./RadioGalaxyNET_V4/annotations/instances_train2017.json", "./RadioGalaxyNET_V4/train2017")
-register_coco_instances("my_dataset_val", {}, "./RadioGalaxyNET_V4/annotations/instances_val2017.json", "./RadioGalaxyNET_V4/val2017")
-register_coco_instances("my_dataset_test", {}, "./RadioGalaxyNET_V4/annotations/instances_test2017.json", "./RadioGalaxyNET_V4/test2017")
+register_coco_instances("my_dataset_train", {}, "./RadioGalaxyNET/annotations/instances_train.json", "./RadioGalaxyNET/train")
+register_coco_instances("my_dataset_val", {}, "./RadioGalaxyNET/annotations/instances_val.json", "./RadioGalaxyNET/val")
+register_coco_instances("my_dataset_test", {}, "./RadioGalaxyNET/annotations/instances_test.json", "./RadioGalaxyNET/test")
 
 """# Train Custom Detectron2 Detector"""
 
